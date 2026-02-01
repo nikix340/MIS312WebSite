@@ -1,0 +1,69 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>Assignment_03.md</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <h1 id="mis312-assignment-3-designing-and-testing-simple-functions">MIS312 Assignment 3 — Designing and Testing Simple Functions</h1>
+    <p>
+      <strong>Book Alignment:</strong> Chapter 3<br /><strong>Primary Goal:</strong> Introduce functions + correctness thinking<br /><strong>Environment:</strong> JupyterLab<br /><strong>Submission:</strong> OneNote Artifact</p>
+    <hr />
+    <h2 id="learning-objectives">Learning Objectives</h2>
+    <p>Students will:</p>
+    <ul>
+      <li>Write a simple Python function</li>
+      <li>Use <code>assert</code> to check correctness</li>
+      <li>Understand the idea of “expected behavior”</li>
+    </ul>
+    <hr />
+    <h2 id="student-tasks">Student Tasks</h2>
+    <h3 id="task-1-write-a-function">Task 1 — Write a Function</h3>
+    <p>Create:</p>
+    <pre>
+      <code class="language-python">def apply_discount(price, discount_percent):
+    """
+    Returns the final price after applying a discount.
+    """
+    return price - (price * discount_percent / 100)
+</code>
+    </pre>
+    <p>Test it manually with different values.</p>
+    <h3 id="task-2-add-assertions">Task 2 — Add Assertions</h3>
+    <p>Add:</p>
+    <pre>
+      <code class="language-python">assert apply_discount(100, 10) == 90
+assert apply_discount(50, 0) == 50
+assert apply_discount(200, 25) == 150
+</code>
+    </pre>
+    <p>Run the cell and confirm no errors occur.</p>
+    <h3 id="task-3-ai-review">Task 3 — AI Review</h3>
+    <p>Ask the MIS312 AI Assistant:</p>
+    <blockquote>
+      <p>“Are there any edge cases or improvements I should consider for this function?”</p>
+    </blockquote>
+    <p>Optionally implement one improvement.</p>
+    <hr />
+    <h2 id="onenote-artifact-requirements">OneNote Artifact Requirements</h2>
+    <ul>
+      <li>Function code</li>
+      <li>Assertions</li>
+      <li>Screenshot showing successful execution</li>
+      <li>Reflection:
+<ul><li>Why are assertions useful?</li><li>How did AI help you think about correctness?</li></ul></li>
+    </ul>
+    <hr />
+    <h2 id="instructor-notes">Instructor Notes</h2>
+    <p>First place logical correctness matters. Emphasize correct behavior, asserts, reflection.</p>
+  </body>
+</html>
